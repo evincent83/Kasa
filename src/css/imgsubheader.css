@@ -1,0 +1,39 @@
+.overlayBack {
+  background: #000000;
+  mix-blend-mode: darken;
+  opacity: 0.3;
+  border-radius: 25px;
+  position: absolute;
+  width: 1240px;
+  height: 223px;
+  top: 171px;
+  z-index: 1;
+  margin: 0 auto;
+
+}
+
+.backSubHeader {
+  width: auto;
+  top: 171px;
+  position: absolute;
+  border-radius: 25px;
+  margin: 0 auto;
+
+}
+
+h1 {
+  position: absolute;
+  height: 68px;
+  width: 705px;
+  left: 273px;
+  right: 262px;
+  top: 249px;
+  color: #ffffff;
+  line-height: 142.6%;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  margin: 0 auto;
+  z-index: 2;
+}
+

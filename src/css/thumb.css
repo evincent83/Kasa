@@ -1,0 +1,44 @@
+#sectionThumb {
+  display: flex;
+  margin: 56px 50px;
+  gap: 50px 60px;
+  flex-wrap: wrap;
+}
+
+.backThumb {
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.imgThumb {
+  width: 340px;
+  height: 340px;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(-180deg, transparent 0%, #000 140%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.titleThumb {
+  position: absolute;
+  left: 5.88%;
+  bottom: 5.88%;
+  margin: 0;
+  font-size: 18px;
+  line-height: 142.6%;
+  display: flex;
+  align-items: flex-end;
+  color: #ffffff;
+}
