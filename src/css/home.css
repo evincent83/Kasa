@@ -1,8 +1,7 @@
-#bgHome {
-    position: absolute;
+.bgHome {
+    display: flex;
     background-color: #F6F6F6;
     border-radius: 25px;
     width: 100%;
-    top:437px;
-    margin: 0 auto;
+    margin-top: 43px;
 }

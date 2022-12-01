@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main>
       <ImgSubHeader backImg={backImg} alt={"Background - Chez vous et partout ailleurs"} title/>
-        <div id="bgHome">
+        <div className="bgHome">
           <ThumbGrid />
         </div>
     </main>

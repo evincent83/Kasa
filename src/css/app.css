@@ -14,15 +14,11 @@
 
 
 html, body, main, #root {
-    height: 100%;
-    width: 100%;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-
 }
 
 #root {
     margin: 0 auto;
     width: 1240px;
-    position: relative;
 }
