@@ -1,10 +1,10 @@
-export default function ImgSubHeader (props) {
-    let title = (props.title) && <h1>Chez vous, partout et ailleurs</h1>;
-    return (
-        <div>
-            <div className="overlayBack"></div>
-            <img className="backSubHeader" src={props.backImg} alt={props.alt}></img>
-            {title}
-        </div>
-    )
+export default function ImgSubHeader(props) {
+  let title = props.title && <h2 id="titleOverlay">Chez vous, partout et ailleurs</h2>;
+  return (
+    <div className="container">
+      <img className="imgBack" src={props.backImg} alt={props.alt}></img>
+      <div className="overlayFilter"></div>
+      {title}
+    </div>
+  );
 }
