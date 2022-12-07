@@ -7,12 +7,7 @@ export default function Dropdown(props) {
     <div className="dropdown_container">
       <div className="dropdown_menu">
         <div className="dropdown_title">{props.title}</div>
-        <div
-          className="dropdown_toogle"
-          onClick={() => {
-            setOpen(!open);
-          }}
-        >
+        <div className="dropdown_toogle" onClick={() => {setOpen(!open);}}>
           <img className={`vector_state ${open ? "active" : "inactive"}`} alt="vector" src={vector}></img>
         </div>
       </div>
