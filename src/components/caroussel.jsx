@@ -24,11 +24,11 @@ export default function Caroussel(props) {
         <p className="carousselNbr">
           {crslNbr}/{lgtNbr}
         </p>
-        <div className="vectorLeft" onClick={() => updateCrslNbr(crslNbr - 1)}>
-          <img className="vectorLeftImg" src={vectorLeft}></img>
+        <div className="vectorLeft">
+          <img className="vectorLeftImg" onClick={() => updateCrslNbr(crslNbr - 1)} src={vectorLeft}></img>
         </div>
-        <div className="vectorRight" onClick={() => updateCrslNbr(crslNbr + 1)}>
-          <img className="vectorRightImg" src={vectorRight}></img>
+        <div className="vectorRight">
+          <img className="vectorRightImg" onClick={() => updateCrslNbr(crslNbr + 1)} src={vectorRight}></img>
         </div>
       </>
     );
