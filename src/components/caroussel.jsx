@@ -4,7 +4,7 @@ import vectorLeft from "../img/arrow_left.png";
 import vectorRight from "../img/arrow_right.png";
 import { useState, useEffect } from "react";
 
-export default function Caroussel(props) {
+export default function Caroussel() {
   let { id } = useParams();
   const lgt = data.find((logement) => logement.id === id);
   const lgtNbr = lgt.pictures.length;

@@ -7,7 +7,7 @@ header {
   margin-top: 40px;
 }
 
-ul {
+nav ul {
   list-style-type: none;
   display: flex;
   margin: 0;
@@ -16,7 +16,7 @@ ul {
   width: 309px;
 }
 
-li {
+nav li {
   font-size: 24px;
   font-weight: 500;
   line-height: 34px;
@@ -24,6 +24,6 @@ li {
   text-align: right;
 }
 
-li:first-child {
+nav li:first-child {
   padding-left: 47px;
 }

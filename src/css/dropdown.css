@@ -24,11 +24,11 @@
 }
 
 .dropdown_toogle {
-    margin-right: 18px;
+  margin-right: 18px;
 }
 .dropdown_info p {
-    margin: 0;
-    padding: 36px 27px 19px 18px;
+  margin: 0;
+  padding: 36px 27px 19px 18px;
 }
 .dropdown_info.active {
   opacity: 1;
@@ -37,7 +37,6 @@
   width: 1023px;
   margin: auto;
   font-size: 24px;
-
 }
 
 .dropdown_info.inactive {
@@ -48,9 +47,26 @@
 }
 
 .dropdown_info.inactive p {
-    display: none;
+  display: none;
 }
 
 .vector_state.active {
-    rotate: 180deg;
+  rotate: 180deg;
+}
+
+.halfdropDown{
+  width: 582px;
+  margin: 0;
+}
+.halfdropDown .dropdown_menu, .halfdropDown .dropdown_info {
+  width: inherit;
+
+}
+
+.halfdropDown .dropdown_info {
+  min-height: 249px;
+}
+
+.halfdropDown .dropdown_info p {
+  font-size: 18px;
 }

@@ -4,7 +4,7 @@ import vector from "../img/vector.png";
 export default function Dropdown(props) {
   const [open, setOpen] = useState(false);
   return (
-    <div className="dropdown_container">
+    <div className={`dropdown_container ${props.className ? props.className : ""}`}>
       <div className="dropdown_menu">
         <div className="dropdown_title">{props.title}</div>
         <div className="dropdown_toogle" onClick={() => {setOpen(!open);}}>
@@ -12,7 +12,7 @@ export default function Dropdown(props) {
         </div>
       </div>
       <div className={`dropdown_info ${open ? "active" : "inactive"}`}>
-        <p>{props.text}</p>
+        {props.children}
       </div>
     </div>
   );
