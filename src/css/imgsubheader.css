@@ -41,7 +41,6 @@
     padding: 31px 102px 32px 16px;
   }
   .container {
-    height: 111px;
     margin-top: 20px;
   }
   .imgBack {
@@ -49,5 +48,8 @@
   }
   .overlayFilter {
     border-radius: 10px;
+  }
+  .container.active {
+    height: 111px;
   }
 }

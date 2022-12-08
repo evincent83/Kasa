@@ -5,7 +5,7 @@ import backImg from '../img/imgSubHeader2.png';
 export default function About() {
   return (
     <main>
-      <ImgSubHeader backImg={backImg} alt={"Background Kasa About"}/> 
+      <ImgSubHeader backImg={backImg} alt={"Background Kasa About"}/>
       <section id="dropdown_a">
         <Dropdown title="Fiabilité"><p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.</p></Dropdown>
         <Dropdown title="Respect"><p>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.</p></Dropdown>
