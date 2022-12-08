@@ -22,3 +22,20 @@ h3 {
   font-size: 18px;
   font-weight: 500;
 }
+@media screen and (max-width: 768px) {
+  #error404 {
+    font-size: 96px;
+    margin-top: 200px;
+    margin-bottom: 11px;
+  }
+  h3 {
+    font-size: 18px;
+    text-align: center;
+    line-height: 26px;
+    margin: 0 58px;
+  }
+  #navBack {
+    margin-top: 113px;
+    font-size: 14px;
+  }
+}

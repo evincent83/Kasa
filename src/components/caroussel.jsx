@@ -21,12 +21,12 @@ export default function Caroussel() {
   let crslArrows =
     lgtNbr === 1 ? null : (
       <>
-        <p className="carousselNbr">
-          {crslNbr}/{lgtNbr}
-        </p>
         <div className="vectorLeft">
           <img className="vectorLeftImg" onClick={() => updateCrslNbr(crslNbr - 1)} src={vectorLeft}></img>
         </div>
+        <p className="carousselNbr">
+          {crslNbr}/{lgtNbr}
+        </p>
         <div className="vectorRight">
           <img className="vectorRightImg" onClick={() => updateCrslNbr(crslNbr + 1)} src={vectorRight}></img>
         </div>

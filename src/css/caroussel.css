@@ -18,9 +18,10 @@
     font-size: 18px;
     color: white;
     margin: 0;
-    position: absolute;
-    top:367px;
-    left:607px;
+    z-index: 2;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 25px;
 }
 
 .overlayCaroussel {
@@ -39,10 +40,30 @@
   z-index: 2;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .vectorRight {
   z-index: 2;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+  .sectionCaroussel {
+  height: 255px;
+  }
+  .imgCaroussel {
+  border-radius: 10px;
+  }
+  .overlayCaroussel {
+    border-radius: 10px;
+  }
+  .vectorLeftImg {
+    width: 30%;
+  }
+  .vectorRightImg {
+    width: 30%;
+  }
 }

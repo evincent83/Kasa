@@ -42,3 +42,25 @@
   align-items: flex-end;
   color: #ffffff;
 }
+.thumblink {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  #sectionThumb {
+    margin: 0;
+    gap: 20px 20px;
+  }
+  #sectionThumb a {
+    margin: 0 auto;
+  }
+  .backThumb {
+    width: 100%;
+    height: 100%;
+    min-height: 255px;
+  }
+  .imgThumb {
+    width: 100%;
+    height: 100%;
+  }
+}

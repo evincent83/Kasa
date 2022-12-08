@@ -1,7 +1,14 @@
 .bgHome {
-    display: flex;
-    background-color: #F6F6F6;
-    border-radius: 25px;
-    width: 100%;
-    margin-top: 43px;
+  display: flex;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  width: 100%;
+  margin-top: 43px;
+}
+@media screen and (max-width: 768px) {
+  .bgHome {
+    background-color: transparent;
+    margin-top: 22px;
+
+  }
 }
