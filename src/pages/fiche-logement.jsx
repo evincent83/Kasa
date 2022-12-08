@@ -17,8 +17,8 @@ export default function FicheLogement(props) {
           <div className="titleSubImg">{lgt.title}</div>
           <div className="location">{lgt.location}</div>
           <div className="globalTag">
-            {lgt.tags.map((elt) => (
-              <Tag text={elt} />
+            {lgt.tags.map((elt, index) => (
+              <Tag key={index} text={elt} />
             ))}
           </div>
         </div>
@@ -38,7 +38,7 @@ export default function FicheLogement(props) {
       </section>
       <div className="underSection">
         <Dropdown title="Description" className="halfdropDown"><p>{lgt.description}</p></Dropdown>
-        <Dropdown title="Équipements" className="halfdropDown"><ul className="equipements">{lgt.equipments.map((elt) => <li key={elt}>{elt}</li>)}</ul></Dropdown>
+        <Dropdown title="Équipements" className="halfdropDown"><ul className="equipements">{lgt.equipments.map((elt, index) => <li key={index}>{elt}</li>)}</ul></Dropdown>
         </div>
     </main>
   );

@@ -65,8 +65,15 @@
 
 .halfdropDown .dropdown_info {
   min-height: 249px;
+  border-radius: 0 0 10px 10px;
+
 }
 
 .halfdropDown .dropdown_info p {
   font-size: 18px;
+}
+
+.halfdropDown .dropdown_info li {
+  font-size: 18px;
+  padding-bottom: 8px;
 }
