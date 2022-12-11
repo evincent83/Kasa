@@ -2,11 +2,11 @@
   margin: 31px 108px 0px 108px;
 }
 
-.dropdown_container {
+.dropdownContainer {
   margin-bottom: 30px;
 }
 
-.dropdown_menu {
+.dropdownMenu {
   background-color: #ff6060;
   height: 52px;
   border-radius: 5px;
@@ -15,20 +15,20 @@
   align-items: center;
 }
 
-.dropdown_title {
+.dropdownTitle {
   color: #fff;
   font-size: 24px;
   padding-left: 18px;
 }
 
-.dropdown_toogle {
+.dropdownToogle {
   margin-right: 18px;
 }
-.dropdown_info p {
+.dropdownInfo p {
   margin: 0;
   padding: 36px 27px 19px 18px;
 }
-.dropdown_info.active {
+.dropdownInfo.active {
   opacity: 1;
   visibility: visible;
   background-color: #f6f6f6;
@@ -37,18 +37,18 @@
   border-radius: 5px;
 }
 
-.dropdown_info.inactive {
+.dropdownInfo.inactive {
   opacity: 0;
   visibility: hidden;
   width: 100%;
   margin: auto;
 }
 
-.dropdown_info.inactive p {
+.dropdownInfo.inactive p {
   display: none;
 }
 
-.vector_state.active {
+.vectorState.active {
   rotate: 180deg;
 }
 
@@ -62,23 +62,23 @@
   align-items: flex-end;
 
 }
-.halfdropDown .dropdown_menu,
-.halfdropDown .dropdown_info {
+.halfdropDown .dropdownMenu,
+.halfdropDown .dropdownInfo {
   width: inherit;
 }
-.halfdropDown .dropdown_info.inactive {
+.halfdropDown .dropdownInfo.inactive {
   height: 0;
 }
 
-.halfdropDown .dropdown_info {
+.halfdropDown .dropdownInfo {
   border-radius: 0 0 10px 10px;
 }
 
-.halfdropDown .dropdown_info p {
+.halfdropDown .dropdownInfo p {
   font-size: 18px;
 }
 
-.halfdropDown .dropdown_info li {
+.halfdropDown .dropdownInfo li {
   font-size: 18px;
   padding-bottom: 8px;
 }
@@ -88,20 +88,20 @@
     margin: 20px 0 0 0;
   }
 
-  .dropdown_title {
+  .dropdownTitle {
     font-size: 13px;
   }
-  .dropdown_toogle {
+  .dropdownToogle {
     margin-right: 6px;
 
   }
-  .vector_state {
+  .vectorState {
     width: 70%;
   }
-  .dropdown_title {
+  .dropdownTitle {
     padding-left: 11px;
   }
-  .dropdown_menu{
+  .dropdownMenu{
     height: 30px;
   }
   .underSection {
@@ -111,10 +111,10 @@
     width: 100%;
     margin-bottom: 30px;
   }
-  .halfdropDown .dropdown_info p {
+  .halfdropDown .dropdownInfo p {
     font-size: 12px;
   }
-  .halfdropDown .dropdown_info li {
+  .halfdropDown .dropdownInfo li {
     font-size: 12px;
   }
 
