@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import Caroussel from "../components/caroussel";
 import data from "../datas/logements.json";
 import Tag from "../components/tag";
@@ -8,7 +8,11 @@ import Dropdown from "../components/dropdown";
 export default function FicheLogement(props) {
   let { id } = useParams();
   const lgt = data.find((logement) => logement.id === id);
-
+  if(!lgt) {
+    return (
+      <Navigate to="/error"/>
+    )
+  }
   return (
     <main>
       <Caroussel />

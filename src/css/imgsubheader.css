@@ -33,6 +33,8 @@
   font-size: 48px;
   z-index: 2;
   color: white;
+  padding: 0 30px;
+
 }
 
 @media screen and (max-width: 768px) {

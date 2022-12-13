@@ -111,11 +111,17 @@
     width: 100%;
     margin-bottom: 30px;
   }
+  .dropdownInfo p {
+    margin: 0;
+    padding: 23px 6px 52px 11px;
+  }
   .halfdropDown .dropdownInfo p {
     font-size: 12px;
   }
   .halfdropDown .dropdownInfo li {
     font-size: 12px;
   }
-
+  .dropdownInfo.active {
+    font-size: 12px;
+  }
 }

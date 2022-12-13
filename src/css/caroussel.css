@@ -66,4 +66,7 @@
   .vectorRightImg {
     width: 30%;
   }
+  .carousselNbr {
+    display: none;
+  }
 }
