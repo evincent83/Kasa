@@ -16,26 +16,26 @@ export default function Caroussel() {
     if (crslNbr === 0) {
       updateCrslNbr(lgtNbr);
     }
-  }, [crslNbr]); // Ne prend compte que lorsque la variable est call.
+  }, [crslNbr, lgtNbr]); // Ne prend compte que lorsque la variable est call.
 
   let crslArrows =
     lgtNbr === 1 ? null : (
       <>
         <div className="vectorLeft">
-          <img className="vectorLeftImg" onClick={() => updateCrslNbr(crslNbr - 1)} src={vectorLeft}></img>
+          <img className="vectorLeftImg" alt="Vector left" onClick={() => updateCrslNbr(crslNbr - 1)} src={vectorLeft}></img>
         </div>
         <p className="carousselNbr">
           {crslNbr}/{lgtNbr}
         </p>
         <div className="vectorRight">
-          <img className="vectorRightImg" onClick={() => updateCrslNbr(crslNbr + 1)} src={vectorRight}></img>
+          <img className="vectorRightImg" alt="Vector right" onClick={() => updateCrslNbr(crslNbr + 1)} src={vectorRight}></img>
         </div>
       </>
     );
 
   return (
     <div className="sectionCaroussel">
-      <img className="imgCaroussel" src={lgt.pictures[crslNbr - 1]}></img>
+      <img className="imgCaroussel" alt="Logement" src={lgt.pictures[crslNbr - 1]}></img>
       <div className="overlayCaroussel"></div>
       {crslArrows}
       {/* Si le nbr de logement est de 1 alors on affiche pas le carousselNbr ni les flèches sinon on affiche la variable crslArrows */}
