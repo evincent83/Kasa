@@ -34,9 +34,9 @@ export default function Carrousel() {
     );
 
   return (
-    <div className="sectioncarrousel">
-      <img className="imgcarrousel" alt="Logement" src={lgt.pictures[crslNbr - 1]}></img>
-      <div className="overlaycarrousel"></div>
+    <div className="sectionCarrousel">
+      <img className="imgCarrousel" alt="Logement" src={lgt.pictures[crslNbr - 1]}></img>
+      <div className="overlayCarrousel"></div>
       {crslArrows}
       {/* Si le nbr de logement est de 1 alors on affiche pas le carrouselNbr ni les flèches sinon on affiche la variable crslArrows */}
     </div>
