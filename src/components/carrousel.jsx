@@ -4,7 +4,7 @@ import vectorLeft from "../img/arrow_left.png";
 import vectorRight from "../img/arrow_right.png";
 import { useState, useEffect } from "react";
 
-export default function Caroussel() {
+export default function Carrousel() {
   let { id } = useParams();
   const lgt = data.find((logement) => logement.id === id);
   const lgtNbr = lgt.pictures.length;
@@ -24,7 +24,7 @@ export default function Caroussel() {
         <div className="vectorLeft">
           <img className="vectorLeftImg" alt="Vector left" onClick={() => updateCrslNbr(crslNbr - 1)} src={vectorLeft}></img>
         </div>
-        <p className="carousselNbr">
+        <p className="carrouselNbr">
           {crslNbr}/{lgtNbr}
         </p>
         <div className="vectorRight">
@@ -34,11 +34,11 @@ export default function Caroussel() {
     );
 
   return (
-    <div className="sectionCaroussel">
-      <img className="imgCaroussel" alt="Logement" src={lgt.pictures[crslNbr - 1]}></img>
-      <div className="overlayCaroussel"></div>
+    <div className="sectioncarrousel">
+      <img className="imgcarrousel" alt="Logement" src={lgt.pictures[crslNbr - 1]}></img>
+      <div className="overlaycarrousel"></div>
       {crslArrows}
-      {/* Si le nbr de logement est de 1 alors on affiche pas le carousselNbr ni les flèches sinon on affiche la variable crslArrows */}
+      {/* Si le nbr de logement est de 1 alors on affiche pas le carrouselNbr ni les flèches sinon on affiche la variable crslArrows */}
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import { useParams, Navigate } from "react-router-dom";
-import Caroussel from "../components/caroussel";
+import Carrousel from "../components/carrousel";
 import data from "../datas/logements.json";
 import Tag from "../components/tag";
 import { ReactComponent as Star } from "../img/Star.svg";
@@ -15,7 +15,7 @@ export default function FicheLogement(props) {
   }
   return (
     <main>
-      <Caroussel />
+      <Carrousel />
       <section className="blockLogement">
         <div className="blockInfo">
           <div className="titleSubImg">{lgt.title}</div>
