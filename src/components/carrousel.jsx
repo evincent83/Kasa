@@ -9,6 +9,15 @@ export default function Carrousel() {
   const lgt = data.find((logement) => logement.id === id);
   const lgtNbr = lgt.pictures.length;
   const [crslNbr, updateCrslNbr] = useState(1);
+  const items = lgt.pictures.map((picture) => {
+    return (
+      <div className="carrouselItem">
+        <img className="imgCarrousel" alt="Logement" src={picture}></img>
+      </div>
+    )
+  })
+  console.log(items)
+
   useEffect(() => {
     if (crslNbr === lgtNbr + 1) {
       updateCrslNbr(1);
@@ -35,7 +44,9 @@ export default function Carrousel() {
 
   return (
     <div className="sectionCarrousel">
-      <img className="imgCarrousel" alt="Logement" src={lgt.pictures[crslNbr - 1]}></img>
+      <div className="carrouselInner" style={{ transform: `translateX(-${[crslNbr - 1] * 100}%)` }}>
+        {items}
+      </div>
       <div className="overlayCarrousel"></div>
       {crslArrows}
       {/* Si le nbr de logement est de 1 alors on affiche pas le carrouselNbr ni les flèches sinon on affiche la variable crslArrows */}
