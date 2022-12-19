@@ -8,7 +8,7 @@ import About from "./pages/about";
 import Error404 from "./pages/404";
 import Footer from "./components/footer";
 
-function App() {
+export default function App() {
 
   return (
     <>
@@ -23,5 +23,3 @@ function App() {
     </>
   );
 }
-
-export default App;
