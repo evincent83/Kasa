@@ -9,13 +9,13 @@ export default function Carrousel() {
   const lgt = data.find((logement) => logement.id === id);
   const lgtNbr = lgt.pictures.length;
   const [crslNbr, updateCrslNbr] = useState(1);
-  const items = lgt.pictures.map((picture) => {
+  const items = lgt.pictures.map((picture, index) => {
     return (
-      <div className="carrouselItem">
+      <div key={index} className="carrouselItem">
         <img className="imgCarrousel" alt="Logement" src={picture}></img>
       </div>
     )
-  })
+  });
 
   useEffect(() => {
     if (crslNbr === lgtNbr + 1) {
