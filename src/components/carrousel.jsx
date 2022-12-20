@@ -16,7 +16,6 @@ export default function Carrousel() {
       </div>
     )
   })
-  console.log(items)
 
   useEffect(() => {
     if (crslNbr === lgtNbr + 1) {
