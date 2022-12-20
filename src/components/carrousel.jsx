@@ -21,10 +21,10 @@ export default function Carrousel() {
   useEffect(() => {
     if (crslNbr === lgtNbr + 1) {
       updateCrslNbr(1);
-    }
+    } // Si crslNbr est égale à la lenght max +1 alors tu reviens à 1
     if (crslNbr === 0) {
       updateCrslNbr(lgtNbr);
-    }
+    } // Si crslNbr est égale à 0 (inférieur à 1) tu reviens au max de lgtNbr (lenght max)
   }, [crslNbr, lgtNbr]); // Ne prend compte que lorsque la variable est call.
 
   let crslArrows =
