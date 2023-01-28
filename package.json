@@ -14,7 +14,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "nodemon --exec 'next build && next start'",
     "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
@@ -42,5 +42,5 @@
   "devDependencies": {
     "gh-pages": "^5.0.0"
   },
-  "homepage": "https://evincent83.github.io/kasa"
+  "homepage": "."
 }
