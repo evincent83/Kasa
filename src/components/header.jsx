@@ -8,10 +8,10 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <NavLink style={({ isActive }) => (isActive ? {textDecoration: 'underline'} : {textDecoration: 'none'})} to="/" end>Accueil</NavLink>
+            <NavLink style={({ isActive }) => (isActive ? {textDecoration: 'underline'} : {textDecoration: 'none'})} to="/Kasa" end>Accueil</NavLink>
           </li>
           <li>
-            <NavLink style={({ isActive }) => (isActive ? {textDecoration: 'underline'} : {textDecoration: 'none'})} to="/about">A Propos</NavLink>
+            <NavLink style={({ isActive }) => (isActive ? {textDecoration: 'underline'} : {textDecoration: 'none'})} to="/Kasa/about">A Propos</NavLink>
           </li>
         </ul>
       </nav>
