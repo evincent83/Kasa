@@ -14,10 +14,10 @@ export default function App() {
     <>
     <Header />
       <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/fiche-logement/:id" element={<FicheLogement />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/*" element={<Error404 />} />
+        <Route path="/Kasa" element={<Home />}/>
+        <Route path="/Kasa/fiche-logement/:id" element={<FicheLogement />} />
+        <Route path="/Kasa/about" element={<About />} />
+        <Route path="/Kasa/*" element={<Error404 />} />
       </Routes>
     <Footer />
     </>
