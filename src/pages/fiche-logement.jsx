@@ -10,7 +10,7 @@ export default function FicheLogement(props) {
   const lgt = data.find((logement) => logement.id === id);
   if(!lgt) {
     return (
-      <Navigate to="/error"/>
+      <Navigate to="/Kasa/error"/>
     )
   }
   return (
